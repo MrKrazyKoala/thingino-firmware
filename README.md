@@ -5,7 +5,7 @@ Thingino is an open-source IP camera firmware derived from [OpenIPC][1] and focu
 ### Usage
 
 ```
-git clone --recurse-submodules https://github.com/themactep/thingino-firmware
+git clone --recurse-submodules https://github.com/mrkrazykoala/thingino-firmware
 cd thingino-firmware
 make
 ```
