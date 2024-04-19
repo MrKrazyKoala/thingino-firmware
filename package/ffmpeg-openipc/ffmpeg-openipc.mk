@@ -15,25 +15,30 @@ FFMPEG_OPENIPC_LICENSE_FILES = LICENSE.md COPYING.LGPLv2.1
 
 FFMPEG_OPENIPC_CONF_OPTS = \
 	--prefix=/usr \
-	--disable-x86asm --disable-w32threads --disable-os2threads --disable-alsa --disable-appkit \
-	--disable-avfoundation --disable-bzlib --disable-coreimage --disable-iconv --disable-libxcb \
-	--disable-libxcb-shm --disable-libxcb-xfixes --disable-libxcb-shape --disable-lzma \
-	--disable-asm --disable-sndio --disable-sdl2 --disable-xlib --disable-zlib --disable-amf \
-	--disable-audiotoolbox --disable-cuda --disable-cuvid --disable-d3d11va --disable-dxva2 \
-	--disable-nvdec --disable-nvenc --disable-v4l2-m2m --disable-vaapi --disable-vdpau --disable-videotoolbox \
-	--disable-avdevice --disable-swscale --disable-postproc --disable-doc --disable-runtime-cpudetect \
-	--disable-bsfs --disable-iconv --disable-ffprobe --enable-gpl --enable-version3 --enable-pthreads --enable-indev=v4l2 --enable-outdev=v4l2 \
-	\
-	--disable-swresample \
-	--disable-avdevice \
-	--disable-filters \
-	--disable-encoders \
-	--disable-decoders --enable-decoder=h264,hevc \
-	--disable-muxers --enable-muxer=flv,rtsp \
-	--disable-demuxers --enable-demuxer=h264,rtsp \
-	--disable-parsers --enable-parser=h264,hevc \
-	--disable-protocols --enable-protocol=file,tcp \
-	--disable-programs --enable-ffmpeg --enable-small
+	  --enable-cross-compile \
+  --enable-small \
+  --disable-everything \
+  --enable-gpl \
+  --enable-version3 \
+  --enable-ffmpeg \
+  --enable-avformat \
+  --enable-avcodec \
+  --enable-parser=h264 \
+  --enable-demuxer=mov \
+  --enable-demuxer=mp4 \
+  --enable-muxer=mp4 \
+  --enable-decoder=h264 \
+  --enable-protocol='file,tcp' \
+  --enable-swscale \
+  --enable-swresample \
+  --enable-demuxer=rawvideo \
+  --enable-muxer=rawvideo \
+  --enable-encoder=rawvideo \
+  --enable-decoder=rawvideo \
+  --enable-pthreads \
+  --enable-swscale \
+  --enable-swresample \
+  --extra-cflags="-Os"
 
 
 FFMPEG_OPENIPC_DEPENDENCIES += host-pkgconf
