@@ -21,9 +21,9 @@ FFMPEG_OPENIPC_CONF_OPTS = \
 	--disable-libxcb-shm --disable-libxcb-xfixes --disable-libxcb-shape --disable-lzma \
 	--disable-asm --disable-sndio --disable-sdl2 --disable-xlib --disable-zlib --disable-amf \
 	--disable-audiotoolbox --disable-cuda --disable-cuvid --disable-d3d11va --disable-dxva2 \
-	--disable-nvdec --disable-nvenc --enable-v4l2-m2m --disable-vaapi --disable-vdpau --disable-videotoolbox \
+	--disable-nvdec --disable-nvenc --disable-v4l2-m2m --disable-vaapi --disable-vdpau --disable-videotoolbox \
 	--disable-avdevice --disable-swscale --disable-postproc --disable-doc --disable-runtime-cpudetect \
-	--disable-bsfs --disable-iconv --disable-ffprobe --enable-gpl --enable-version3 --enable-pthreads \
+	--disable-bsfs --disable-iconv --disable-ffprobe --enable-gpl --enable-version3 --enable-pthreads --enable-libv4l2 \
 	\
 	--disable-swresample \
 	--disable-avdevice \
