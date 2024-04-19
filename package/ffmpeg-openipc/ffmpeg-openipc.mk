@@ -1,7 +1,7 @@
 ################################################################################
 #
 # ffmpeg-openipc | updated 2022.08.10
-#
+# --disable-everything \
 ################################################################################
 
 FFMPEG_OPENIPC_VERSION = 4.4.2
@@ -15,7 +15,6 @@ FFMPEG_OPENIPC_LICENSE_FILES = LICENSE.md COPYING.LGPLv2.1
 
 FFMPEG_OPENIPC_CONF_OPTS = \
 	--prefix=/usr \
-	--disable-everything \
 	--disable-x86asm --disable-w32threads --disable-os2threads --disable-alsa --disable-appkit \
 	--disable-avfoundation --disable-bzlib --disable-coreimage --disable-iconv --disable-libxcb \
 	--disable-libxcb-shm --disable-libxcb-xfixes --disable-libxcb-shape --disable-lzma \
