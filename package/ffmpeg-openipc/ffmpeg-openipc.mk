@@ -22,7 +22,7 @@ FFMPEG_OPENIPC_CONF_OPTS = \
 	--disable-audiotoolbox --disable-cuda --disable-cuvid --disable-d3d11va --disable-dxva2 \
 	--disable-nvdec --disable-nvenc --disable-v4l2-m2m --disable-vaapi --disable-vdpau --disable-videotoolbox \
 	--disable-avdevice --disable-swscale --disable-postproc --disable-doc --disable-runtime-cpudetect \
-	--disable-bsfs --disable-iconv --disable-ffprobe --enable-gpl --enable-version3 --enable-pthreads --enable-indev=v4l2 \
+	--disable-bsfs --disable-iconv --disable-ffprobe --enable-gpl --enable-version3 --enable-pthreads --enable-indev=v4l2 --enable-outdev=v4l2 \
 	\
 	--disable-swresample \
 	--disable-avdevice \
